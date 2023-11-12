@@ -34,7 +34,10 @@
             <ColumnDefinition Width="20*"/>
             <ColumnDefinition Width="20*"/>
             <ColumnDefinition Width="2*"/>
-        </Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>
+
+
+
         <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Vertical" >
 
             <Viewbox Height="20" MaxWidth="100" StretchDirection="DownOnly">
@@ -45,7 +48,7 @@
             </Viewbox>
 
             <Button UseLayoutRounding="True" x:Name="Persona41" Margin="15,15,15,0"
-                    BorderThickness="0" Height="40" Width="40">
+                    BorderThickness="0" Height="40" Width="40" MouseEnter="MouseEnter41" MouseLeave="MouseLeave41" Click="MouseClick41"                     MouseDoubleClick="DoubleClick41">
 
                 <Button.OpacityMask>
 
@@ -135,7 +138,7 @@
             </Viewbox>
 
             <Button UseLayoutRounding="True" x:Name="Persona44" Margin="15,15,15,0"
-                    BorderThickness="0" Height="40" Width="40">
+                    BorderThickness="0" Height="40" Width="40" >
 
                 <Button.OpacityMask>
 

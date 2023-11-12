@@ -10,19 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace AplicacionOrla
 {
     /// <summary>
-    /// Lógica de interacción para UserControl1.xaml
+    /// Lógica de interacción para Perfil.xaml
     /// </summary>
-    public partial class UserControl1 : UserControl
+    public partial class Perfil : Window
     {
-        public UserControl1()
+        public Perfil(String Nombre, String Apellidos, String Email, String Foto)
+        
         {
             InitializeComponent();
+            Profile_Nombre.Text = Nombre;
+            Profile_Apellidos.Text = Apellidos;
+            Profile_Email.Text = Email;
+            Profile_Image.Source = new BitmapImage(new
+            Uri(string.Format(@"..\..\{0}", Foto), UriKind.Relative));
         }
+
     }
 }
