@@ -16,29 +16,31 @@
             <ColumnDefinition Width="100*"/>
         </Grid.ColumnDefinitions>
 
-        <Viewbox Height="20" MaxWidth="100" StretchDirection="DownOnly">
+        <Viewbox MaxWidth="100" StretchDirection="DownOnly">
 
-            <TextBlock Text="Aritz P" FontStretch="Expanded" x:Name="LabelPuesto41"
+            <TextBlock FontStretch="Expanded" x:Name="LabelPuesto" Grid.Row="0" Grid.Column="0"
                            Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
         </Viewbox>
 
-        <Button UseLayoutRounding="True" x:Name="Persona41" Margin="15,15,15,0"
-                    BorderThickness="0" Height="40" Width="40" MouseEnter="MouseEnter41" MouseLeave="MouseLeave41" Click="MouseClick41"                     MouseDoubleClick="DoubleClick41">
+        <Button UseLayoutRounding="True" x:Name="Persona" Margin="15,15,15,0"  Grid.Row="1" Grid.Column="0"
+                    BorderThickness="0" Height="40" Width="40" MouseEnter="MouseEnterP" MouseLeave="MouseLeaveP" Click="ClickP"                     MouseDoubleClick="DoubleClickP">
 
             <Button.OpacityMask>
 
-                <ImageBrush ImageSource="/Imagenes/Usuario.jpeg"/>
+                <ImageBrush ImageSource="Imagenes/Usuario.jpeg" Stretch="Uniform"/>
 
             </Button.OpacityMask>
 
             <Button.Background>
 
-                <ImageBrush Stretch="UniformToFill" ImageSource="/Imagenes/Usuario.jpeg"/>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Imagenes/Usuario.jpeg"/>
 
             </Button.Background>
 
         </Button>
+
+        <Image Grid.Row="2" Grid.Column="0"  Source="Imagenes/PC.jpeg" Margin="15"/>
 
     </Grid>
 </UserControl>
